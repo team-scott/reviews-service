@@ -15,9 +15,9 @@ class Pagination extends React.Component {
     
     this.props.setOffset(offset);
 
-    $(document).ready(function(){
-      $( "a.scrollLink" ).click((event) => {
-          event.preventDefault();
+    $(document).ready(() => {
+      $("a.scrollLink").click((e) => {
+          e.preventDefault();
           $("html, body").animate({ scrollTop: $('#anchor').offset().top - 15 }, 500);
       });
     });
@@ -26,7 +26,7 @@ class Pagination extends React.Component {
   buildHref() {
     let pageNumbers = document.getElementsByTagName('a');
     for (let i = 0; i < pageNumbers.length; i++) {
-      pageNumbers[i].href = "anchor"
+      pageNumbers[i].href = "anchor";
     }
   }
 

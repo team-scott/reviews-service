@@ -153,11 +153,29 @@ class ReviewList extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header reviewCount={this.state.reviewCount} searchValue={this.state.searchValue} handleChange={this.handleChange} handleKeyPress={this.handleKeyPress} handleClick={this.handleClick} reviews={this.state.reviews} searchedReviews={this.state.searchedReviews} searchedWord={this.state.searchedWord} />
+        <Header
+          reviews={this.state.reviews}
+          handleClick={this.handleClick}
+          handleChange={this.handleChange}
+          reviewCount={this.state.reviewCount}
+          searchValue={this.state.searchValue}
+          handleKeyPress={this.handleKeyPress}
+          searchedWord={this.state.searchedWord}
+          searchedReviews={this.state.searchedReviews}
+        />
 
-        <Review allReviews={this.state.reviews} paginatedReviews={this.state.paginatedReviews} searchedReviews={this.state.searchedReviews} />
+        <Review
+          allReviews={this.state.reviews} 
+          searchedReviews={this.state.searchedReviews} 
+          paginatedReviews={this.state.paginatedReviews} 
+        />
 
-        <Pagination pageCount={this.state.pageCount} id={this.state.id} getReviews={this.getReviews} setOffset={this.setOffset} />
+        <Pagination
+          id={this.state.id}
+          setOffset={this.setOffset}
+          getReviews={this.getReviews}
+          pageCount={this.state.pageCount}
+        />
       </React.Fragment>
     );
   }

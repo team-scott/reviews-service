@@ -41,10 +41,7 @@ class Review extends React.Component {
   }
 
   renderReviews() {
-    if (this.props.searchedReviews.length) {
-      return this.props.searchedReviews;
-    }
-    return this.props.paginatedReviews;
+    return this.props.searchedReviews.length ? this.props.searchedReviews : this.props.paginatedReviews;
   }
 
   appendResponses(i) {
@@ -54,10 +51,7 @@ class Review extends React.Component {
     let owner = reviews[reviews.length - 1];
     let ownerResponse = reviews[i].owner_response;
     let date = () => {
-      if (searchedReviews.length) {
-        return searchedReviews[i].date;
-      }
-      return paginatedReviews[i].date;
+      return searchedReviews.length ? searchedReviews[i].date : paginatedReviews[i].date;
     }
 
     if (reviews[i].has_response) {

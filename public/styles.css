@@ -14,6 +14,11 @@
   color: #484848 !important;
 }
 
+#star-container {
+  position: relative;
+  margin-left: 10px;
+}
+
 .search-features {
   position: relative;
   font-family: Nunito;

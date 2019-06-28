@@ -10,7 +10,7 @@ const getReviewsFromDatabase = (id, callback) => {
         if (err) {
           console.error('Error querying database for all results', err);
         } else {
-          db.close(() => { callback(null, rows), console.log('Got reviews and closed database')});
+          db.close(() => { callback(null, rows), console.log('Got reviews and closed database') });
         }
       });
     }
@@ -26,7 +26,7 @@ const getSearchResultsFromDatabase = (id, word, callback) => {
         if (err) {
           console.error('Error querying database for searched word results', err);
         } else {
-          db.close(() => { callback(null, rows), console.log('Got search results and closed database')});
+          db.close(() => { callback(null, rows), console.log('Got search results and closed database') });
         }
       });
     }

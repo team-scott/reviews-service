@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(cors());
 
 app.get('/:id', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'))
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 })
 
 app.get('/room/:id', (req, res) => {
@@ -45,7 +45,7 @@ app.get('/room/:id', (req, res) => {
 app.get('/:id/search/:word', (req, res) => {
   getSearchResultsFromDatabase(req.params.id, req.params.word, (err, data) => {
     if (err) {
-      console.error('Error retrieving searched reviews from database', err)
+      console.error('Error retrieving searched reviews from database', err);
     } else {
       res.send(sortReviews(data));
     }

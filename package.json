@@ -5,7 +5,7 @@
   "main": "bundle.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack -p --watch",
+    "build": "webpack -p",
     "start": "node ./server/server.js"
   },
   "keywords": [],

@@ -1,5 +1,5 @@
 const express = require('express');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const path = require('path');
 const util = require('util');
 const cors = require('cors');
@@ -8,7 +8,7 @@ const port = process.env.PORT || 3002;
 const { sortReviews, getPaginatedItems } = require('./helpers.js');
 const { getReviewsFromDatabase, getSearchResultsFromDatabase } = require('../database/helper/helpers.js');
 
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(cors());
 

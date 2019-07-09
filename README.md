@@ -1,23 +1,26 @@
-# airbnb-reviews
+# Air Bed 'n Breakfast Reviews
 
 <img src="https://giant.gfycat.com/RaggedAppropriateAmericanalligator.gif" height="80%" width="80%">
 
-airbnb-reviews is an implementation from scratch of the reviews component from any given Airbnb room rental page.  This component was built as a fullstack application utilizing Express and SQLite to store and serve data to the front-end component made with React.
+Air Bed 'n Breakfast Reviews is a replication of the reviews component from any given Airbnb room rental page. It aims to provide a seamless, SPA experience with interactive elements.
+- <img src="https://i.imgur.com/fWNJjfH.png" height="2%" width="2%"> Built with a React front-end
+- 💻RESTful server created with Express
+- 🎭 Tested using Jest and Enzyme
+- 📦 Built using Webpack
 
-# Related Projects
-airbnb-reviews was developed alongside a team of two other developers responsible for their own components.
+## Table of Contents
 
-airbnb-recommendations // Author: [Alan Zhao - Alan-Zhao-908](https://github.com/Alan-Zhao-908)
+1. [Requirements](#Requirements)
+2. [Usage](#Usage)
 
-airbnb-host-neighborhood // Author: [Kirill Chernik - kirillchernik8](https://github.com/kirillchernik8)
+## Requirements
 
-# Technologies Used
-  * [Node.js](https://nodejs.org/en/)
-  * [React](https://reactjs.org/)
-  * [Express.js](https://expressjs.com/en/api.html)
-  * [SQLite](https://www.sqlite.org/index.html)
+Beyond the npm modules required in package.json, you should have the following installed and working on the server:
 
-# Getting Started
+- Node v10.13.0 (LTS as of May 2019) or higher
+- SQLite
+
+## Usage
 After cloning the repo to your machine and moving into the root directory: 
 ```
 # Install dependencies
@@ -27,5 +30,5 @@ npm install
 npm start
 
 # To view the component (works for endpoints from 1 - 100)
-localhost:3002/1
+localhost:3002/1 OR https://airbnb-reviews.herokuapp.com/1
 ```
